@@ -1,0 +1,18 @@
+﻿#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "ukr");
+    int arr[10] = { 1, -2, 3, -4, 5, -6, 7, -8, 9, -10 };
+    for (int i = 0; i < 10; i++) {
+        if (arr[i] < 0) {
+            arr[i] = abs(arr[i]);
+        }
+    }
+    cout << "Масив після заміни від'ємних елементів їх модулями: ";
+    for (int i = 0; i < 10; i++) {
+        cout << arr[i] << " ";
+    }
+    return 0;
+}
